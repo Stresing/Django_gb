@@ -9,7 +9,7 @@ def total_in_db(request):
         'title': 'Общее количество посчитано в базе данных',
         'total': total,
     }
-    return render(request, 'python_Django_app/total_count.html', context)
+    return render(request, 'templates/myapp6/total_count.html', context)
 
 
 def total_in_view(request):
@@ -19,7 +19,7 @@ def total_in_view(request):
         'title': 'Общее количество посчитано в представлении',
         'total': total,
     }
-    return render(request, 'myapp6/total_count.html', context)
+    return render(request, 'templates/myapp6/total_count.html', context)
 
 
 def total_in_template(request):
@@ -27,4 +27,4 @@ def total_in_template(request):
         'title': 'Общее количество посчитано в шаблоне',
         'products': Product,
     }
-    return render(request, 'python_Django_app/total_count.html', context)
+    return render(request, 'templates/myapp6/total_count.html', context)
